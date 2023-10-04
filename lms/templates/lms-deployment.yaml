@@ -56,7 +56,7 @@ spec:
             - name: LMS_LOGGING
               value: {{ .Values.lms.logLevel }}
           {{- with .Values.lms.env }}
-            {{- toYaml . | nindent 12 }}
+            {{- tpl (toYaml .) $ | nindent 12 }}
           {{- end }}
           ports:
             - name: lms

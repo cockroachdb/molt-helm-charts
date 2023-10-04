@@ -62,7 +62,7 @@ spec:
             - name: ORCH_LOGGING
               value: {{ .Values.orchestrator.logLevel }}
           {{- with .Values.orchestrator.env }}
-            {{- toYaml . | nindent 12 }}
+            {{- tpl (toYaml .) $ | nindent 12 }}
           {{- end }}
           command: ["/bin/sh", "-c"]
           args: [
