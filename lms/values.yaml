@@ -86,6 +86,7 @@ lms:
 orchestrator:
   releaseName: "molt-lms-orchestrator"
   sourceDialect: ""
+  targetDialect: "cockroach"
   configSecretName: ""
   # allowOrigin specifies the pattern or exact host(s) that should be
   # allowed to make requests from a browser (CORS).
