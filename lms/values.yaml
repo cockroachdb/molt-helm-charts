@@ -56,8 +56,8 @@ lms:
   #   - mountPath: "/app/certs"
   #     name: mysqlca
   #     readOnly: true
-  sslVolumes: {}
-  sslVolumeMounts: {}
+  sslVolumes: []
+  sslVolumeMounts: []
 
   env: []
   labels: {}
@@ -106,8 +106,8 @@ orchestrator:
   #   - mountPath: "/app/certs"
   #     name: orch-cert
   #     readOnly: true
-  sslVolumes: {}
-  sslVolumeMounts: {}
+  sslVolumes: []
+  sslVolumeMounts: []
 
   env: []
   labels: {}
