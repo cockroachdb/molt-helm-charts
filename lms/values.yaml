@@ -38,6 +38,7 @@ lms:
   sourceDialect: ""
   shadowMode: none
   logLevel: info
+  allowTLSDisable: false
 
   # Name of the secret containing the JSON format of 
   # environment variables.
