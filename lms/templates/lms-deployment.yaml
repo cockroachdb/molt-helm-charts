@@ -44,7 +44,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["/bin/sh", "-c"]
           args: [
-          "./molt-lms {{ .Values.lms.sourceDialect }}"
+          "./molt-lms {{ .Values.lms.sourceDialect }} {{ if .Values.lms.allowTLSDisable }} --allow-tls-mode-disable {{ end }}"
           ]
           env:
             {{- if .Values.lms.configSecretName }}
