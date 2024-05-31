@@ -10,7 +10,7 @@ labels: {}
 image:
   repository: cockroachdb/molt-lms
   pullPolicy: IfNotPresent
-  tag: 0.2.5
+  tag: 0.2.6
 
 serviceAccount:
   # Specifies whether a service account should be created
