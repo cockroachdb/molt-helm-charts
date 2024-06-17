@@ -66,7 +66,7 @@ spec:
           {{- end }}
           command: ["/bin/sh", "-c"]
           args: [
-          "./molt-lms-orchestrator --k8s-running"
+          "./molt-lms-orchestrator --k8s-running {{ if .Values.orchestrator.showConnectionLogging }} --show-connection-logging {{ end }}"
           ]
           ports:
             - name: orchestrator

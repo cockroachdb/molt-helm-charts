@@ -39,6 +39,7 @@ lms:
   shadowMode: none
   logLevel: info
   allowTLSDisable: false
+  showConnectionLogging: false
 
   # Name of the secret containing the JSON format of 
   # environment variables.
@@ -93,6 +94,7 @@ orchestrator:
   # allowed to make requests from a browser (CORS).
   allowOrigin: ""
   logLevel: info
+  showConnectionLogging: false
 
   # Used for orchestrator ssl certs.
   # We recommend mounting to /app/certs. If set, make sure to set
